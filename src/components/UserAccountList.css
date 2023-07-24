@@ -1,0 +1,80 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #648edc;
+  } 
+h1{
+    margin: 0
+}
+  .landing-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #648edc;
+  }
+  
+  .box {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+  
+    width: 400px;
+    max-height: 50vh;
+    overflow: hidden;
+  }
+  
+  .title {
+    background-color: #f0f0f0;
+    padding: 10px;
+    color: #626265;
+  }
+  .user-name{
+    color: #8a8c8f;
+  }
+  
+  .user-list-container {
+    max-height: 300px; /* Set the maximum height for the user list container */
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+    overflow-y: auto; /* Enable vertical scrollbar when content exceeds the container height */
+  }
+  
+  .user-list {
+    margin-top: 20px;
+  }
+  
+  .user-list h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* .user-list p {
+  
+  } */
+  
+  .user-list hr {
+    margin: 5px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+  .list-content{
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  .profile-icon {
+    width: 35px; /* Set the desired width */
+    height: 35px; /* Set the desired height */
+    border-radius: 50%; /* To make the image circular, use half of the width/height value */
+    overflow: hidden; /* Hide any overflow outside the circular shape */
+    margin-right: 5%;
+  }
+  
+  .profile-icon img {
+    width: 100%; /* Make the image cover the entire container */
+    height: 100%; /* Make the image cover the entire container */
+    object-fit: cover; /* Maintain the aspect ratio and cover the container */
+  }
+  

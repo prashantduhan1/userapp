@@ -1,0 +1,151 @@
+/* .profile-details-container{
+    display: flex;
+    flex-direction: column;
+}
+.profile-picture{
+    width: 150px;
+    height: 150px;
+}
+.profile-image{
+    width: 100%;
+    height: 100%;
+    border-radius:50% ;
+    object-fit: cover;
+}
+.basic-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+p{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.basic-details__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  /* profiledetails.css */
+
+.profile-details-container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .profile-picture {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .basic-details-container{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border-right: 1px solid black; 
+    padding-right: 50px; 
+  }
+  .basic-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Remove spacing between table cells */
+    margin-top: 10px; /* Add some space between the table and other elements */
+  }
+  
+  td {
+    padding: 5px; /* Add some padding for cells */
+  }
+  
+  /* Remove borders for all table cells */
+  table,
+  th,
+  td {
+    border: none;
+  }
+  
+  /* Align the first column (labels) to the right and give it 50% width */
+  .label {
+    text-align: right;
+    width: 20%;
+    color: rgb(144, 138, 138);
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .detail {
+    text-align: left;
+    color: rgb(58, 55, 55);
+    font-size: 16px;
+    font-weight: bold;
+  }  
+  .vertical-line {
+    width: 1px; /* Set the width of the line */
+    height: 100%; /* Set the height of the line to span the entire height of its container */
+    background-color: black; /* Set the color of the line */
+  }
+ .address-container{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+ }
+ .map-image{
+     height: 60%;
+     width: 80%;
+     border-radius: 10px;
+
+ }
+ .location-image{
+    width: 100%; /* Make the image cover the entire container */
+    height: 100%; /* Make the image cover the entire container */
+    object-fit: cover; /* Maintain the aspect ratio and cover the container */
+    border-radius: 20px;
+ }
+ .address-title{
+    width: 100%;
+    display: flex;
+    color: rgb(144, 138, 138);
+    font-weight: bold;
+ }
+ .lat-and-long{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+ }
+ .lat{margin-right: 20px;}
+ .longitude-and-latitude{
+  display: flex;
+  justify-content: flex-end;
+  
+ }
+  
