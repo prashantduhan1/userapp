@@ -1,0 +1,311 @@
+body{
+    background-color: white;
+    margin: 0;
+    /* padding-top: 30px; */
+    /* padding-bottom: 20px; */
+   
+}
+.profile-heading{
+  color: rgb(102, 99, 99);
+  font-weight: bold;
+  font-size: 16px;
+}
+.username-in-header{
+  color:rgb(50, 51, 51)
+}
+.content{
+  padding-bottom: 40px;
+  display: flex;
+}
+.side-navigation{
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(55, 55, 190);
+    display: flex; 
+    align-items: center; 
+    border-radius: 20px;
+}
+.section-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align items vertically in the center */
+    align-items: center; 
+    color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+
+}
+.section-list hr {
+    width: 60%; 
+    margin: 5px 0; 
+  }
+ .section-list-content{
+    width: 100%;
+  display: flex; /* Add flex display to align the items */
+  flex-direction: column;
+  justify-content: space-between; /* Align items to the left and right edges */
+  align-items:flex-start; /* Vertically center the items */
+ 
+ } 
+
+ .title-and-arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+ }
+ .title-and-arrow h4{
+  margin-bottom: 0;
+ }
+
+ .arrow{
+    background-color: white;
+     border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; 
+    color: black;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+ }
+
+ .content-detail{
+  margin-left: 5%;
+  margin-right: 5%;
+  width: 100%;
+  flex-grow: 1; /* Let profile-details take up remaining space */
+  display: flex;
+  flex-direction: column;
+ }
+ .content-detail hr {
+  width: 100%;
+  margin: 5px 0;
+  border: 1px solid black;
+}
+ .header{
+  height: 10%;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ }
+ .coming-soon{
+  width: 100%;
+  height: 100%;
+ }
+ .profile-details{
+  width: 100%;
+  height: 100%;
+  flex-grow: 1; 
+ }
+ /* CSS for the sticky bar */
+ .sticky-bar {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 20%;
+  height: 50px;
+  background-color: #007bff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+}
+
+.sticky-chat-bar {
+  border:  2px solid #007bff;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 20%;
+  height: 60%;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; 
+  cursor: pointer;
+  color: white;
+}
+.chat-bar-header{
+  height: 10%;
+  width: 100%;
+  background-color: #007bff;
+}
+
+.up-arrow {
+  color: white;
+  font-size: 24px;
+}
+
+/* CSS for the chat box */
+.chat-box {
+  position: fixed;
+  bottom: 80px;
+  right: 30px;
+  width: 250px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+}
+
+.chat-box.show {
+  display: block;
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.close-icon {
+  cursor: pointer;
+}
+
+.chat-users {
+  color: black;
+  background-color: white;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+}
+
+/* .chat-users div {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+} */
+
+.user-list div:last-child {
+  border-bottom: none;
+}
+.chatbar-content{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.icon-and-chat{
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 10px;
+}
+.uparrow{
+  padding-right: 10px;
+}
+.chat-component{
+  width: 100%;
+}
+.chat-user-innerbox{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.personal-chat{
+  border:  2px solid #007bff;
+  position: fixed;
+  bottom: 20px;
+  right: 22%;
+  width: 20%;
+  height: 40%;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; 
+  cursor: pointer;
+  color: white;
+}
+.personal-chat-bar-header{
+  width: 100%;
+  height: 15%;
+  background-color: #007bff;
+  display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.message-history{
+  width: 100%;
+  height: 70%;
+  background-color: white;
+  padding-bottom: 10px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow-y: scroll; 
+}
+.message-body{
+  width: 100%; 
+  background-color: white;
+  display: flex;
+  margin-bottom: 10px;
+  border-top: 2px solid #007bff;
+}
+.message-input{
+  width: 90%;
+  border: none;
+  
+}
+.send-button{
+  width: 10%;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color:#007bff
+}
+
+.personal-chat-outer-box{
+  width: 100%;
+  height: 100%;
+}
+.personal-chatbar-content{
+  padding: 5px 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.icon-and-name{
+  width: 70%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+.personal-chat-username{
+  padding-left: 5px;
+  padding-top: 5px;
+}
+.personal-chat-profile-icon{
+  width: 35px; /* Set the desired width */
+  height: 35px; /* Set the desired height */
+  border-radius: 50%; /* To make the image circular, use half of the width/height value */
+  overflow: hidden; /* Hide any overflow outside the circular shape */
+  margin-right: 5%;
+}
+.personal-chat-profile-icon img {
+  width: 100%; /* Make the image cover the entire container */
+  height: 100%; /* Make the image cover the entire container */
+  object-fit: cover; /* Maintain the aspect ratio and cover the container */
+}
+.chat-history{
+  height: 70%;
+}
+.message-box{
+  height: 10%;
+}
+.hsitory-and-footer{
+  height: 85%;
+}
+
+
+ 
